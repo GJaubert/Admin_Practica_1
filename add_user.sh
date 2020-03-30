@@ -9,6 +9,7 @@ chage -M 90 $1
 chage -W 1 $1
 chage -I 2 $1
 chown root /home/$1
+chmod g+rwx /home/$1
 name_=$1
 shift
 while [ "$1" != "" ]; do
